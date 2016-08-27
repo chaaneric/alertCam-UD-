@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.chaneric.sshtest3.Menu2">
+    tools:context="com.example.chaneric.sshtest3.Menu2"
+    android:id="@+id/r1">
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -30,5 +31,27 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="getPhoto"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tian&apos;s Button"
+        android:id="@+id/poll"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="poll"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tian&apos;s Second Button"
+        android:id="@+id/button3"
+        android:layout_below="@+id/poll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="readFile"/>
 
 </RelativeLayout>
