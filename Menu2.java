@@ -57,7 +57,7 @@ public class Menu2 extends AppCompatActivity {
         try {
             ChannelExec channel = (ChannelExec) session.openChannel("exec");
             BufferedReader in = new BufferedReader(new InputStreamReader(channel.getInputStream()));
-            channel.setCommand("raspistill -n -t 1 -o image.jpg");
+            channel.setCommand("cd Downloads;raspistill -n -t 1 -o notif.jpg");
             channel.connect();
             channel.disconnect();
         } catch (JSchException e) {
