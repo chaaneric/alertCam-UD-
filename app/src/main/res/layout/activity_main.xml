@@ -7,20 +7,55 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
     tools:context="com.example.chaneric.sshtest3.MainActivity">
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="#8ebdff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:id="@+id/button"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="#8ebdff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/button4"
+        android:onClick="nextpage"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BIRD BROTHERS" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Tians Fat"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Connect"
-        android:id="@+id/button"
-        android:layout_centerVertical="true"
+        android:src="@drawable/camalert"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:onClick="nextpage"/>
+        android:id="@+id/imageView" />
+    <EditText
+        android:id="@+id/editIP"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:hint="Enter Your IP Address" />
+
 </RelativeLayout>
